@@ -1,0 +1,13 @@
+student_score = 0
+highest_score = 0
+second_highest_score = 0
+
+while student_score != -1:
+  student_score = int(input('Enter student\'s score: '))
+  student_name = Str(input('Enter student\'s name: '))
+if student_score > highest_score:
+  highest_score = student_score
+  print(f'{student_name} has the highest, {highest_score}')
+elif student_score > highest_score:
+  second_highest_score = student_score
+  print(f'{student_name} has the second highest, {second_highest_score}')
