@@ -5,5 +5,4 @@ for i in range(11, 1, -1):
   for j in range(1, i):
     multiple *= j
   sum += 1 / multiple
-
-print(sum) 
+  print(f'{sum:.4f}')

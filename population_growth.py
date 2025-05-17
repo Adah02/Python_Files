@@ -1,5 +1,5 @@
 current_population = int(input('Enter current population: '))
-growth_rate = int(input('Enter current population: '))
+growth_rate = float(input('Enter current growth rate: '))
 
 final_percentage = 100
 actual_rate = (growth_rate / final_percentage)
