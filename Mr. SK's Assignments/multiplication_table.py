@@ -1,9 +1,8 @@
-for i in range(1, 10): 
+for i in range(1, 13): 
   print('\t')
-  for j in range(1, 10):
+  for j in range(1, 13):
     multiple = (i * j)
-    print(f'{i:.0f} * {j:3} = {multiple:4}',end = "\t ")
-
-  print(end = ' ')
+    print(f'{i:.0f} * {j:.0f} = {multiple}')
+  print(end = "\t ")
  
     
