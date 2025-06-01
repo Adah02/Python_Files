@@ -4,10 +4,8 @@ def seconds_since_midnight(hour, minute, seconds):
 	totoalSeconds = hour_in_seconds + minute_in_seconds + seconds;
 	return totoalSeconds;
 
+hour = int(input('Enter the hour of the day based on 24 hour clock: '))
+minute = int(input('Enter the minutes of current time: '))
+seconds = int(input('Enter the seconds of current time: '))
 
-
-hour = input('Enter the hour of the day based on 24 hour clock: ')
-minute = input('Enter the minutes of current time: ')
-seconds = input('Enter the minutes of current time: ')
-
-print(seconds_since_midnight(hour, minute, seconds))
+print('The current seconds since midnight is ',seconds_since_midnight(hour, minute, seconds))
