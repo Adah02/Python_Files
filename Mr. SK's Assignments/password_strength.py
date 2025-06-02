@@ -1,5 +1,6 @@
 password = input('Enter your password: ')
 
+
 password_length = len(password)
 if password_length < 8: print('Your password is very weak')
 if password_length == 8: print('Your password is weak')
