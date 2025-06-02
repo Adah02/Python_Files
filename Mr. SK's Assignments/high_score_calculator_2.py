@@ -14,6 +14,7 @@ for index in range(number_of_students):
     second_highest_score = student_score
     name2 = student_name
 
+
 print(name,'has',highest_score)
 print(name2,'has',second_highest_score)
  
