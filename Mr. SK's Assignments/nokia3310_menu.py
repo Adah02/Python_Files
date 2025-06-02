@@ -1,29 +1,29 @@
 #Nokia 3310 Menu Operations
 while True:
-  print("""
-   List of Menu functions
-    Press;-
-  1 > Phone book
-  2 > Messages
-  3 > Chat
-  4 > Call register
-  5 > Tones
-  6 > Settings
-  7 > Call divert
-  8 > Games
-  9 > Calculator
-  10 > Reminder
-  11 > Clock
-  12 > Profiles
-  13 > SIM services
-   0 > Back
-   """)
-  user_input = print(input("Enter selection: "))
-  match user_input:
-    case 1:
-      while True:
-        print("""
-         Phone Book
+	print("""
+  	 List of Menu functions
+ 	   Press;-
+	1 > Phone book
+	2 > Messages
+  	3 > Chat
+ 	4 > Call register
+	5 > Tones
+	6 > Settings
+	7 > Call divert
+	8 > Games
+	9 > Calculator
+	10 > Reminder
+	11 > Clock
+	12 > Profiles
+	13 > SIM services
+ 	0 > Back
+	""")
+	user_input = print(input("Enter selection: "))
+	match user_input:
+	case 1:
+		while True:
+			print("""
+			Phone Book
 	  Press;-
 	 1 > Search
 	 2 > Service Nos
@@ -120,7 +120,7 @@ while True:
 
     case 2:
       while True:
-        print("""
+        print('''
 	      Messages
 	       Press;-
 	     1 > Write messages
@@ -134,7 +134,7 @@ while True:
 	     9 > Voice mailbox number
 	    10 > Service command editor
 	     0 > Back
-		""")
+		''')
         messages = print(input("Enter selection: "))
         match messages:
           case 1:
@@ -175,16 +175,16 @@ while True:
                 break
           case 7:
             while True:
-              print("""
+              print('''
 		Message settings
 		Press;-
 		1 > Set
 		2 > Common
                 0 > Back
-		""")
+		''')
               message_settings = print(input('Enter selection: '))
-              match message_settings:
-                
+              match message_settings:         
+
     case 3:
       while True:
         print("Chat")
@@ -193,7 +193,7 @@ while True:
           break
     case 4:
       while True:
-        print(""
+        print('''
 		Call Register
 		Press;- 
 		1 > Missed calls
@@ -205,13 +205,13 @@ while True:
 		7 > Call cost settings
 		8 > Prepaid credit
                 0 > Bcak
-               """)
+                ''')
         call_register = print(input("Enter selection: "))
         match call_register:
           
     case 5:
       while True:
-        print("""
+        print('''
 		Tones
 		Press;- 
 		1 > Ringing tone
@@ -224,7 +224,7 @@ while True:
 		8 > Vibrating alert
 		9 > Screen saver
                 0 > Back
-		""")
+		 ''')
         tones = print(input('Enter selection: '))
         match tones:
           case 1:

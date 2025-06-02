@@ -37,7 +37,7 @@ print(scores)
 
 print(cart[0].upper())
 
-print(scores[0:6:2])
+print(scores[len(scores) : 0:-1])
 print(scores[::2])
 
 new_list = cart + scores
