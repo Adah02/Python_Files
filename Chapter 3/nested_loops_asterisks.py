@@ -5,12 +5,14 @@ for i in range(1, 11):
   print('')
 print('\n')
 
+
 print('b')
 for i in range(11, 1, -1):
   for j in range(i, 1, -1):
     print('*', end = '')
   print('')
 print('\n')
+
 
 print('c')
 for i in range(1, 11):
@@ -20,6 +22,7 @@ for i in range(1, 11):
     print('*',end = '')
   print(' ')
 print('\n')
+
 
 print('d')
 for d in range(11, 1, -1):
