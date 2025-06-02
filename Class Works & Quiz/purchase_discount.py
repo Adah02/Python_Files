@@ -2,6 +2,7 @@ total = int(input('Enter total purchase amount: '))
 
 final_percentage = 100
 
+
 if total >= 1000 & total <= 10000:
   discount_percentage = 5
   discount = total * (discount_percentage / final_percentage)
