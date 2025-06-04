@@ -10,8 +10,9 @@ public class SemicolonBankAtmFile {
 	
 	public static double accountWithdrawal(double withdrawalAmount, double balance){
 		final double PERCENTAGE = 100;
-		double withdrawalPercentage = (balance / PERCENTAGE) * 90;
+		double withdrawalPercentage = ((balance / PERCENTAGE) * 90);
 		if (withdrawalAmount % 500 == 0 && withdrawalAmount % 1000 == 0){
+			System.out.println("Withdrawal Percentage" + withdrawalPercentage);
 			if (withdrawalAmount <= withdrawalPercentage && withdrawalAmount > 0){
 				double withdrawalFee = 100;
 				balance -= (withdrawalAmount + withdrawalFee);

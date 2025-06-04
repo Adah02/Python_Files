@@ -7,11 +7,15 @@ public class SemicolonBankAtm {
 
 	SemicolonBankAtmFile atm = new SemicolonBankAtmFile();
 
-	System.out.print("Welcome to Semicolon ATM");
-	double balance = input.nextDouble();
-	while ()
+	System.out.println("Welcome to Semicolon ATM");
 
-	boolean withdrawal = true;
+	System.out.print("Enter balance: ");
+	double balance = input.nextDouble();
+	while (balance < 1){
+		System.out.print("Enter a valid balance: ");
+		balance = input.nextDouble();
+		}
+
 	System.out.print("Enter withdrawal amount in multiples of 500 or 1000: ");
 	double withdrawalAmount = input.nextDouble();
 

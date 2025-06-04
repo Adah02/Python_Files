@@ -8,8 +8,13 @@ while True:
 		return balance
 			
 	def account_balance(balance):
-		balance = balance
-		return balance
+		if balance > 0:
+			balance = balance
+			return balance
+		else:
+			print('Enter a valid amount')
+			balance = True
+
 
 	def withdrawal(withdrawal_amount, balance):
 		PERCENTAGE = 100
