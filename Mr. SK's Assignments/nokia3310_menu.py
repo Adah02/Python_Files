@@ -39,19 +39,19 @@ while True:
 	 """)
         phone_book_select = print(input("Enter selection: "))
         match phone_book_select:
-          case 1:
-            while True:
-              print("Search")
-              search = print(input("Press 0 > Back: "))
-              if search == 0:
-                break         
-          case 2:
-            while True:
-              print("Service Nos")
-              service = print(input("Press 0 > Back: "))
-              if service == 0:
-                break
-          case 3:
+		case 1:
+			while True:
+				print("Search")
+				search = print(input("Press 0 > Back: "))
+				if search == 0:
+					break         
+		case 2:
+			while True:
+				print("Service Nos")
+				service = print(input("Press 0 > Back: "))
+				if service == 0:
+					break
+		case 3:
             while True:
               print("Add name")
               add_name = print(input("Press 0 > Back: "))
