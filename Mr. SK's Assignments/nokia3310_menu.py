@@ -52,14 +52,14 @@ while True:
 				if service == 0:
 					break
 		case 3:
-            while True:
-              print("Add name")
-              add_name = print(input("Press 0 > Back: "))
-              if add_name == 0:
-                break
+			while True:
+				print("Add name")
+  				add_name = print(input("Press 0 > Back: "))
+					if add_name == 0:
+						break
 
-          case 4:
-            while True:
+		case 4:
+			while True:
               print("Erase")
               erase = print(input("Press 0 > Back: "))
               if erase == 0:
