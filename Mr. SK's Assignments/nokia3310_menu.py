@@ -57,54 +57,53 @@ while True:
   				add_name = print(input("Press 0 > Back: "))
 					if add_name == 0:
 						break
-
 		case 4:
 			while True:
-              print("Erase")
-              erase = print(input("Press 0 > Back: "))
-              if erase == 0:
-                break
-          case 5:
-            while True:
-              print("Edit")
-              edit = print(input("Press 0 > Back: "))
-              if edit == 0:
-                break
-          case 6:
-            while True:
-              print("Assign tone")
-              assign_ = print(input("Press 0 > Back: "))
-              if assign_ == 0:
-                break
-          case 7:
-            while True:
-              print("Send b'card")
-              send_card = print(input("Press 0 > Back: "))
-              if send_card == 0:
-                break
-          case 8:
-            while True:
-              print("""
-		Options
-		  Press;- 
-		1 > Type of view
-		2 > Memory status
-                0 > Back
-	         """)
-              option_select = print(input('Enter selection: '))
-              match option_select:
-                case 1:
-                  while true:
-                    print("Type of view")
-                    view = print(input('Press 0 > Back: '))
-                    if view == 0:
-                        break
-                case 2:
-                  while true:
-                    print("Memory status")
-                    status = print(input('Press 0 > Back: '))
-                    if status == 0:
-                      break                 
+				print("Erase")
+				erase = print(input("Press 0 > Back: "))
+				if erase == 0:
+					break
+		case 5:
+			while True:
+				print("Edit")
+				edit = print(input("Press 0 > Back: "))
+				if edit == 0:
+					break
+		case 6:
+			while True:
+				print("Assign tone")
+				assign_ = print(input("Press 0 > Back: "))
+				if assign_ == 0:
+					break
+		case 7:
+			while True:
+				print("Send b'card")
+					send_card = print(input("Press 0 > Back: "))
+					if send_card == 0:
+						break
+		case 8:
+			while True:
+				print("""
+				Options
+				Press;- 
+				1 > Type of view
+				2 > Memory status
+				0 > Back
+				""")
+				option_select = print(input('Enter selection: '))
+				match option_select:
+				case 1:
+					while true:
+						print("Type of view")
+						view = print(input('Press 0 > Back: '))
+						if view == 0:
+							break
+				case 2:
+					while true:
+						print("Memory status")
+						status = print(input('Press 0 > Back: '))
+						if status == 0:
+  							break                 
           case 9:
             while True:
               print("Speed dials")
