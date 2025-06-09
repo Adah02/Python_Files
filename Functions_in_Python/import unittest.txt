@@ -1,0 +1,21 @@
+import unittest
+
+class TestExample(unittest.TestCase):
+    def test_addition(self):
+        self.assertEqual(2 + 2, 4)
+        self.assertNotEqual(2 + 2, 5)
+
+    def test_boolean(self):
+        self.assertTrue(3 > 2)
+        self.assertFalse(2 > 3)
+
+    def test_membership(self):
+        self.assertIn(3, [1, 2, 3])
+        self.assertNotIn(4, [1, 2, 3])
+
+    def test_exceptions(self):
+        with self.assertRaises(ZeroDivisionError):
+            1 / 0
+
+if __name__ == "__main__":
+    unittest.main()
