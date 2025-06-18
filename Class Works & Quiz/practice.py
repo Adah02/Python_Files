@@ -34,3 +34,12 @@ print(colors1)
 cubes = [(number, number**3) for number in range(1, 11)]
 
 print(cubes)
+
+#Printing the square of even numbers in a series
+
+number = [4, 1, 6, 8, 7, 3, 2, 1, 9, 11, 10]
+
+for value in (x**2 for x in number if x % 2 == 0):
+	print(value, end = ' ')
+
+
