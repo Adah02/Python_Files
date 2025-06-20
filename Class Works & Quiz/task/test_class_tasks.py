@@ -27,3 +27,8 @@ class TestClass(TestCase):
 
         self.assertEqual(actual, class_tasks.average_of_list(items))
 
+    def test_for_mutiple_of_numbers_in_third_position(self):
+        items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        actual = 162
+
+        self.assertEqual(actual, class_tasks.multiple_of_numbers_in_third_positions(items))

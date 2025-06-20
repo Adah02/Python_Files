@@ -27,12 +27,14 @@ def sum_of_elements_in_odd_positions(numbers):
     return sum_of_odd
 
 
-def multiple_of_number_in_third_positions(numbers):
+def multiple_of_numbers_in_third_positions(numbers):
     multiple = 1
-    index = 0
+    counter = 1
     for item in numbers:
-        if index % 3 == 0:
+        if counter % 3 == 0:
             multiple *= item
+        counter += 1
+
     return multiple
 
 def average_of_list(numbers):
