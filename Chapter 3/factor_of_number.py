@@ -1,5 +1,5 @@
 userinput = int(input('Enter an integer: '))
-print(f'The factors of',userinput, 'are;')
+print(f'The factors of',userinput, 'are')
 
 
 i = userinput

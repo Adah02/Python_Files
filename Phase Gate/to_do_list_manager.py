@@ -1,37 +1,34 @@
 def add_a_task(task_list, task):
   #To add a task to your to-do list.
-  task_list.append(task);
-  return task_list;
+  task_list.append(task)
+  return task_list
   
 def view_tasks(view_task, task_list):
   #To view task in the to-do-list.
-  users_choice = str.toLower(view_task);
+  users_choice = view_task.lower()
   if view_task == users_choice:
     return task_list
   else:
-    return 'Invalid input';  
+    return 'Invalid input'
   
 def mark_task_as_complete(mark_task, task_list):
-  #To mark completed tasks in to do list.
-  index = 0;
+  #To mark completed tasks in to-do list.
   for item in task_list:
-    if item != mark_task:
-      index += 1;
-    if item == mark_task:
-      item[index].expand('[X]')
+    if item.lower() == mark_task.lower():
+      task_list(item).append('[X]')
       return task_list
 
 def delete_a_task(delete_item, task_list):
-  #To delete item from your to do list.
-  counter = 0;
+  #To delete item from your to-do list.
   for item in task_list:
-    if item != delete_item:
-      counter += 1
-    elif item == delete_item:
-      task_list.pop(counter);
-      return task_list;
+    if item.lower() == delete_item.lower():
+      task_list.remove(item)
+      return task_list
   
     
+mark_task = ''
+view_task = ''
+delete_item = ''
 
 print('''
     1. Add a task
@@ -58,20 +55,15 @@ while True:
       break
     case 5:
       print('Good-Bye...!')
-      user_selection = False;
+      user_selection = False
       break
     case _:
-      user_selection = True;
+      user_selection = True
     
 
 
-task_list = ['Buy gloceries','Transport','Finish homework', ];
-
-for item in task_list:
-  print(mark_task_as_complete(mark_task, task_list))
+task_list = ['Buy groceries','Transport','Finish homework']
 
 
-
-
-
-  
+print(delete_a_task(delete_item, task_list))
+print(mark_task_as_complete(mark_task, task_list))

@@ -29,17 +29,17 @@ def withdraw_funds(balance, withdraw_amount):
     balance -= withdraw_amount
     return balance
   elif withdraw_amount > balance:
-    higher_amount_withdraw_response = 'Withdrawal amount is greater than your balance';
-    return higher_amount_withdraw_response;
+    higher_amount_withdraw_response = 'Withdrawal amount is greater than your balance'
+    return higher_amount_withdraw_response
   else:
     lower_amount_withdraw_response ='Withdrawal amount is lower than minimum' 
-    return lower_amount_withdraw_response;
+    return lower_amount_withdraw_response
 
 def search_for_account(accounts, search_item):
   for items in range(len(accounts)):
     for item in accounts[items]:
       if item == search_item:
-        customers_account = accounts[items];
+        customers_account = accounts[items]
         return customers_account;
   else:
     response = 'No account with such detail';

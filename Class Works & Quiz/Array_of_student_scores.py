@@ -13,10 +13,10 @@ print(f'We have {len(scores)} scores for prim {len(scores) - 2}')
 for items in scores:
   print(items)
 
-counter = 0;
+counter = 0
 for item in cart:
   print(f'index {counter} = {item}')
-  counter += 1;
+  counter += 1
 
 #Printing multiple items from  in the same line.
 

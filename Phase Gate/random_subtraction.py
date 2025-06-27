@@ -7,7 +7,7 @@ for index in range(10):
 	first_number = random.randrange(20)
 	second_number = random.randrange(20)
 	for count in range(2):
-		temp = first_number;
+		temp = first_number
 		if first_number < second_number:
 			first_number = second_number
 			second_number = temp
@@ -17,7 +17,7 @@ for index in range(10):
 			if answer == (first_number - second_number):
 				correctAnswer += 1
 				attempt += 1
-				break;
+				break
 			else: attempt += 1
 
 

@@ -1,10 +1,10 @@
 def  employee_pay_roll(employee_name, work_hours, pay_rate, federal_tax_rate, state_tax_rate):
 	#To calculate and prepare employee's payroll.
-	gross_pay = pay_rate * work_hours;
-	PERCENTAGE = 100;
+	gross_pay = pay_rate * work_hours
+	PERCENTAGE = 100
 	federal_withholding = ((gross_pay / PERCENTAGE) * federal_tax_rate)
 	state_withholding = ((gross_pay / PERCENTAGE) * state_tax_rate)
-	total_deduction = federal_withholding + state_withholding;
+	total_deduction = federal_withholding + state_withholding
 	net_pay = (gross_pay  - total_deduction)
 	payrolls[counter] += (employee_name, work_hours, pay_rate, gross_pay, federal_withholding)
 	return payrolls
@@ -24,10 +24,10 @@ payroll = """
 pay_roll_view = True
 while pay_roll_view == True:
 	print(payroll)
-	selection = int(input("Enter selection: "));
+	selection = int(input("Enter selection: "))
 	match selection:
 		case 1: 
-			add_payroll = True;
+			add_payroll = True
 			while add_payroll == True:
 				employee_name = str(input("Enter employee's name: "))
 				workingHour = True
@@ -37,18 +37,18 @@ while pay_roll_view == True:
 						print('Enter a valid work hours...')
 						workingHour = True
 					else:
-						workingHour = False;
+						workingHour = False
 				pay_rate = float(input("Enter payrate: "))
 				federal_tax_rate = float(input("Enter federal tax rate: "))
 				state_tax_rate = float(input("Enter state tax rate: "))
 				print('Employee Pay-roll added =============>')
 				feedback = int(input('Enter "0" > Back or "1" to continue: '))
 				if feedback == 0:
-					add_payroll = False;
+					add_payroll = False
 				elif feedback == 1:
-					add_payroll = True;
+					add_payroll = True
 				else:
-					add_payroll = False;
+					add_payroll = False
 		case 2: 
 			view_payroll = True
 			while view_payroll == True:
@@ -76,6 +76,6 @@ while pay_roll_view == True:
 			pay_roll_view = false
 			break
 		case _: 
-			print("Enter a valid option");
-			pay_roll_view = True;
+			print("Enter a valid option")
+			pay_roll_view = True
 				
