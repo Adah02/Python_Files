@@ -12,10 +12,13 @@ def view_tasks(view_task, task_list):
     return 'Invalid input'
   
 def mark_task_as_complete(mark_task, task_list):
-  #To mark completed tasks in to-do list.
+  #To mark completed tasks in to do list.
+  index = 0
   for item in task_list:
+    if item.lower() != mark_task.lower():
+      index += 1
     if item.lower() == mark_task.lower():
-      task_list(item).append('[X]')
+      task_list[index][0] = '[X]'
       return task_list
 
 def delete_a_task(delete_item, task_list):
@@ -61,9 +64,6 @@ while True:
       user_selection = True
     
 
+task_list = [['[]','Buy groceries'],['[]','Transport'],['[]','Finish homework']]
 
-task_list = ['Buy groceries','Transport','Finish homework']
-
-
-print(delete_a_task(delete_item, task_list))
 print(mark_task_as_complete(mark_task, task_list))
