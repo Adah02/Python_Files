@@ -5,28 +5,27 @@ def add_a_task(task_list, task):
   
 def view_tasks(view_task, task_list):
   #To view task in the to-do-list.
-  users_choice = view_task.lower()
-  if view_task == users_choice:
+  access = "list"
+  if access.lower() == view_task.lower():
     return task_list
-  else:
-    return 'Invalid input'
-  
+  return None
+
+
 def mark_task_as_complete(mark_task, task_list):
   #To mark completed tasks in to do list.
   index = 0
   for item in task_list:
     if item.lower() != mark_task.lower():
       index += 1
-    if item.lower() == mark_task.lower():
+    elif item.lower() == mark_task.lower():
       task_list[index][0] = '[X]'
-      return task_list
+
 
 def delete_a_task(delete_item, task_list):
   #To delete item from your to-do list.
   for item in task_list:
     if item.lower() == delete_item.lower():
       task_list.remove(item)
-      return task_list
   
     
 mark_task = ''
@@ -48,7 +47,7 @@ while True:
       task = str(input('Enter the task: '))
       break
     case 2:
-      view_task = input('Enter list to view tasks: ')
+      view_task = input('Type \'list\' to view tasks: ')
       break
     case 3:
       mark_task = input('Enter the task to mark: ')
