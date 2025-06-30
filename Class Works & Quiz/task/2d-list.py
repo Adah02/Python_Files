@@ -1,3 +1,4 @@
+"""
 def values_in_elements():
     list = [[4, 6, 8, 2], [8, 3, 2, 5], [7, 1, 5]]
     for index, number in enumerate(list):
@@ -9,8 +10,6 @@ numbers = numbers.split(" ")
 print(numbers)
 
 
-
-"""
 dictionary = {"name": "John", "age": 25, "height": 70, "weight": 100}
 for key, value in dictionary.items():
     print(key, value)
@@ -24,13 +23,11 @@ print("\n",dictionary["age"])
 
 del dictionary["age"]
 print(dictionary)
-
+"""
 
 def numbers_in_words(number):
     number_to_word= {
                 0:"Zero",
-                1:"One",
-                2:"Two","
                 1:"One",
                 2:"Two",
                 3:"Three",
@@ -58,4 +55,3 @@ def numbers_in_words(number):
 number = int(input("Enter a number: "))
 
 print(f"Number {number} in word is {numbers_in_words(number)}")
-"""
