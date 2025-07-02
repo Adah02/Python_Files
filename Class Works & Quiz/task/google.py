@@ -3,14 +3,14 @@ def google_word(word):
     return items
 
 def word_count(word):
-    google = []
-    for letter in sorted(word):
-        google.append(f"{letter}:{word.count(letter)}")
+    google = {}
+    alpha = ''
+    for item in word:
+        alpha += (item + ' ')
+    for letter in alpha.split():
+        google[letter] = alpha.count(letter)
 
-    dict = google
-    return dict
-
-
+    return google
 
 
 print(word_count("google"))
