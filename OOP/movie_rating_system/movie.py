@@ -1,8 +1,9 @@
-from movie_rating_system.movie_ratings.rating import Rating
+from movie_rating_system import rating
 
 class Movie:
-    def __init__(self):
-        self.rate = Rating()
+    def __init__(self, title):
+        self.title = title
+        self.rate = rating.Rating()
         self.movies = []
 
     @staticmethod
