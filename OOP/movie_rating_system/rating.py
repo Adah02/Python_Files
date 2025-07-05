@@ -1,10 +1,9 @@
 from contextlib import nullcontext
 from movie_rating_system import movie
 
-
 class Rating:
     def __init__(self):
-        self.ratings = []
+        self.ratings = [[6,8]]
         self.movi = movie.Movie(title = nullcontext)
         self.movies = self.movi.movie_list()
 
