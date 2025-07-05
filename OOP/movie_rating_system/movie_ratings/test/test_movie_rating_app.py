@@ -1,17 +1,17 @@
-import movie_rating_app
+from movie_rating_system.movie_ratings import movie
 
 from unittest import TestCase
 
 class TestMovieRatingApp(TestCase):
     def test_that_movie_list_isEmpty(self):
-        self.assertFalse(False, movie_rating_app.movie_list())
+        self.assertFalse(False, movie.movie_list())
 
         movie_rating_app.add_movie("Semicolon")
         self.assertTrue(True, movie_rating_app.movie_list())
 
     def test_that_movie_list_isNotEmpty(self):
         movie_rating_app.add_movie("Semicolon")
-        self.assertTrue(True,movie_rating_app.movie_list())
+        self.assertTrue(True, movie_rating_app.movie_list())
 
     def test_that_rating_list_isEmpty(self):
         self.assertTrue(True, movie_rating_app.rating_list())
