@@ -7,7 +7,7 @@ class Movie:
         self.movies = []
 
     @staticmethod
-    def movie_date():
+    def movie_date_and_time():
         from datetime import datetime
         time = datetime.now()
         hour = time.hour
@@ -18,7 +18,7 @@ class Movie:
 
     def add_movie(self, title):
         #For adding a movie to the list
-        self.movies.append({"name":title, "date": self.movie_date()})
+        self.movies.append({"name":title, "date": self.movie_date_and_time()})
         self.rate.add_rating_list([])
 
     def movie_list(self):

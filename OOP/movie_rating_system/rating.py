@@ -1,10 +1,9 @@
-from contextlib import nullcontext
 from movie_rating_system import movie
 
 class Rating:
     def __init__(self):
-        self.ratings = [[6,8]]
-        self.movi = movie.Movie(title = nullcontext)
+        self.ratings = []
+        self.movi = movie.Movie(self)
         self.movies = self.movi.movie_list()
 
     def add_rating_list(self, list):
@@ -32,5 +31,5 @@ class Rating:
         total_average = average / len(self.ratings)
         return float(f'{total_average:.1f}')
 
-    def rating_list(self) -> list:
+    def rating_list(self):
         return self.ratings
