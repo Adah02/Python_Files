@@ -32,5 +32,5 @@ class Rating:
         total_average = average / len(self.ratings)
         return float(f'{total_average:.1f}')
 
-    def rating_list(self):
+    def rating_list(self) -> list:
         return self.ratings

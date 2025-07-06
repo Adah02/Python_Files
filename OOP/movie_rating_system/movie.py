@@ -8,12 +8,13 @@ class Movie:
 
     @staticmethod
     def movie_date():
-        from datetime import date
-        date = date.today()
-        year = date.year
-        month = date.month
-        day = date.day
-        return year, month, day
+        from datetime import datetime
+        time = datetime.now()
+        hour = time.hour
+        if hour > 12:
+            hour = hour % 12
+        date_and_time = time.strftime(f"%d %m %Y  {hour}:%M %p")
+        return date_and_time
 
     def add_movie(self, title):
         #For adding a movie to the list
