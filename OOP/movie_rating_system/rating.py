@@ -31,5 +31,8 @@ class Rating:
         total_average = average / len(self.ratings)
         return float(f'{total_average:.1f}')
 
+    def remove_ratings_from_list(self, index):
+        self.ratings.remove(self.ratings[index])
+
     def rating_list(self):
         return self.ratings

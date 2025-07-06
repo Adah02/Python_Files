@@ -21,5 +21,14 @@ class Movie:
         self.movies.append({"name":title, "date": self.movie_date_and_time()})
         rate.add_rating_list([])
 
+    def remove_movie(self, title):
+        rate = rating.Rating()
+        count = 0
+        for movie in self.movies:
+            if movie["name"].lower() == title.lower():
+                self.movies.remove(self.movies[count])
+                rate.remove_ratings_from_list(count)
+            count += 1
+
     def movie_list(self):
         return self.movies
