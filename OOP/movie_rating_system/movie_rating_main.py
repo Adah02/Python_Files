@@ -9,11 +9,9 @@ movie_menu = '''
     3 -> View average movie rating
     4 -> View average ratings
     5 -> Remove movie from list
-    6 -> Remove all from list
-    7 -> View movie list & ratings
-    8 -> Exit
+    6 -> View movie list & ratings
+    7 -> Exit
     '''
-
 print(movie_menu)
 while True:
     movi = movie.Movie()
@@ -21,19 +19,28 @@ while True:
     movie_ = ''
     choice = int(input('Enter your choice: '))
     match choice:
-        case '1':
+        case 1:
             movie_ = input('Enter movie name: ')
             movi.add_movie(movie_)
-        case '2':
+        case 2:
             movie_ = input('Enter movie name: ')
             rating_ = input('Enter movie rating: ')
             rate.rate_movie(movie_, rating_)
-        case '3':
+        case 3:
             movie_ = input('Enter movie name: ')
             print(f"{movie_} {rate.average_rating_for_movie(movie_)}")
-        case '4':
+        case 4:
             movie_ = input('Enter movie name: ')
             print(f"{movie_} {rate.average_ratings_for_all_movies()}")
-        case '5':
+        case 5:
             movie_ = input('Enter movie name: ')
             movi.remove_movie(movie_)
+        case 6:
+            ratings = [rate.rating_list()]
+            count = 0
+            for movie in movi.movie_list():
+                print(f"{movie["name"]}")
+                count += 1
+        case 7:
+            print('Goodbye!...')
+            break

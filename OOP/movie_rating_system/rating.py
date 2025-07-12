@@ -34,6 +34,5 @@ class Rating:
     def remove_ratings_from_list(self, count):
         self.ratings.remove(self.ratings[count])
 
-    @property
     def rating_list(self):
         return self.ratings

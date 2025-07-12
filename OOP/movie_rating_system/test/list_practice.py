@@ -1,4 +1,5 @@
-#from movie_rating_system import rating
+from movie_rating_system import rating
+from movie_rating_system import movie
 
 def movie_date_and_time():
     from datetime import datetime
@@ -47,3 +48,15 @@ print(ratings)
 remove_movie("semi")
 print(movies)
 print(ratings)
+
+rate = rating.Rating()
+ratings = [rate.rating_list()]
+movi = movie.Movie()
+move = [{"name":"semi", "date":'12:3 pm'}, {"name":"colon", "date":'3:0 pm'}]
+
+movi.add_movie("Semi")
+movi.add_movie("Colon")
+movi.add_movie("Coco")
+
+for item in move:
+    print(f"{item["name"]}")
