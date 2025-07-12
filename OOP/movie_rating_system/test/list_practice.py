@@ -6,6 +6,8 @@ def movie_date_and_time():
     hour = date_time.hour
     if hour > 12:
         hour = hour % 12
+    elif hour == 0:
+        hour = 12
     date_and_time = date_time.strftime(f"%d %m %Y  {hour}:%M %p")
     return date_and_time
 

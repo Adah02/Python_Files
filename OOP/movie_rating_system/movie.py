@@ -1,8 +1,7 @@
 from movie_rating_system import rating
 
 class Movie:
-    def __init__(self, title):
-        self.title = title
+    def __init__(self):
         self.movies = []
 
     @staticmethod
@@ -12,6 +11,8 @@ class Movie:
         hour = date_time.hour
         if hour > 12:
             hour = hour % 12
+        elif hour == 0:
+            hour = 12
         date_and_time = date_time.strftime(f"%d %m %Y  {hour}:%M %p")
         return date_and_time
 
@@ -25,7 +26,7 @@ class Movie:
         rate = rating.Rating()
         count = 0
         for movie in self.movies:
-            if movie["name"].lower() == title.lower():
+            if movie["name"].lower().equal(title.lower()):
                 self.movies.remove(self.movies[count])
                 rate.remove_ratings_from_list(count)
             count += 1

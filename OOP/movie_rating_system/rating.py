@@ -3,7 +3,7 @@ from movie_rating_system import movie
 class Rating:
     def __init__(self):
         self.ratings = []
-        self.movi = movie.Movie(self)
+        self.movi = movie.Movie()
         self.movies = self.movi.movie_list()
 
     def add_rating_list(self, list):
@@ -31,8 +31,9 @@ class Rating:
         total_average = average / len(self.ratings)
         return float(f'{total_average:.1f}')
 
-    def remove_ratings_from_list(self, index):
-        self.ratings.remove(self.ratings[index])
+    def remove_ratings_from_list(self, count):
+        self.ratings.remove(self.ratings[count])
 
+    @property
     def rating_list(self):
         return self.ratings
