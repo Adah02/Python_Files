@@ -7,7 +7,7 @@ movie_menu = '''
     1 -> Add movie
     2 -> Rating
     3 -> View average movie rating
-    4 -> View average ratings
+    4 -> View average ratings for movies
     5 -> Remove movie from list
     6 -> View movie list & ratings
     7 -> Exit
@@ -22,6 +22,7 @@ while True:
         case 1:
             movie_ = input('Enter movie name: ')
             movi.add_movie(movie_)
+            print(f"{movie_} is added...")
         case 2:
             movie_ = input('Enter movie name: ')
             rating_ = input('Enter movie rating: ')
@@ -39,7 +40,7 @@ while True:
             ratings = [rate.rating_list()]
             count = 0
             for movie in movi.movie_list():
-                print(f"{movie["name"]}")
+                print(f"{movie["name"]} {ratings[count]}")
                 count += 1
         case 7:
             print('Goodbye!...')
