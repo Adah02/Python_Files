@@ -37,11 +37,11 @@ class Movie:
 
     def average_rating_for_movie(self):
         #For calculating average movie ratings
-        for count in range(len(self.movies)):
+        for index, movie in enumerate(self.movies):
             try:
-                print(f"Movie name: {self.movies[count]["name"]}  -> Average Rating: {(sum(self.ratings[count])) / len(self.ratings[count])}")
+                print(f"Movie name: {movie["name"]}  -> Average Rating: {(sum(self.ratings[index])) / len(self.ratings[index])}")
             except ZeroDivisionError:
-                print(f"Movie name: {self.movies[count]["name"]}  -> Average Rating: 0")
+                print(f"Movie name: {movie["name"]}  -> Average Rating: 0")
 
     def movie_list_and_ratings(self):
         #To view movie ratings and the respective ratings

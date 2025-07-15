@@ -26,7 +26,7 @@ while True:
             print(f"{movie_} was added successfully!...")
         case '2':
             movie_ = input('Enter movie name: ')
-            rating_ = input('Enter movie rating: ')
+            rating_ = float(input('Enter movie rating: '))
             movi.rate_movie(movie_, rating_)
         case '3':
             print(movi.average_rating_for_movie())
