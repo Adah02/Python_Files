@@ -1,5 +1,5 @@
 from movie_rating_system import rating
-from movie_rating_system import movie
+from movie_rating_system import movie_rating
 
 def movie_date_and_time():
     from datetime import datetime

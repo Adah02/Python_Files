@@ -1,5 +1,5 @@
 from movie_rating_system.rating import Rating
-from movie_rating_system.movie import Movie
+from movie_rating_system.movie_rating import Movie
 from unittest import TestCase
 
 class TestMovieRatingApp(TestCase):
