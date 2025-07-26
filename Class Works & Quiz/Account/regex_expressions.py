@@ -37,5 +37,25 @@ print(pattern_)
 
 email = "adah02@gmail.com"
 
-emailpattern = re.findall(r"[a-z]+[0-9]*@[a-z]+mail.com", email)
+emailpattern = re.findall(r"[a-z]+[0-9]*@gmail*yahoomail.com*", email)
 print(emailpattern)
+
+
+# Define a class
+class Town:
+    def __init__(self, name, x, y, mayor):
+        self.name = name
+        self.x = x
+        self.y = y
+        self.mayor = mayor
+
+# Create an empty list
+towns = list()
+
+# Append instances of the class to the list
+towns.append(Town("Lagos", 6.5244, 3.3792, "John Doe"))
+towns.append(Town("Abuja", 9.0765, 7.3986, "Jane Smith"))
+
+# Accessing the appended objects
+for town in towns:
+    print(f"Town: {town.name}, Mayor: {town.mayor}")

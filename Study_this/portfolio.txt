@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash T K | Developer </title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1><span id="typed-header"></span><span class="cursor">|</span></h1>
+  </header>      
+  
+<nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center">
+  <div class="container">
+
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#achievements">Achievements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="about" class="py-5">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="profile.png" alt="Akash T K" class="profile-photo">
+      <p>
+        Hello! I'm a B.Tech graduate in Information Technology, passionate about leveraging technology to drive innovation and efficiency. With a solid foundation in IT and a keen interest in exploring new opportunities, I am eager to make a meaningful impact in the tech industry. I bring a unique perspective and a diverse set of skills to the table, ready to contribute to the success of forward-thinking organizations. Whether it's through problem-solving, developing innovative solutions, or collaborating on exciting projects, I am dedicated to delivering high-quality results. Let’s connect! Feel free to explore my work and reach out to discuss how I can add value to your organization.
+      </p>
+    </div>
+    <ul class="contact-info">
+      <li><i class="fas fa-envelope"></i> <a href="mailto:akash.tk333@gmail.com">akash.tk333@gmail.com</a></li>
+      <li><i class="fas fa-phone"></i> 8891101357</li>
+      <li><i class="fas fa-map-marker-alt"></i> Palakkad, India</li>
+      <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/akash-tk">linkedin.com/in/akash-tk</a></li>
+      <li><i class="fab fa-github"></i> <a href="https://github.com/akash-tk">github.com/akash-tk</a></li>
+      <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/akash_tk">twitter.com/akash_tk</a></li>
+      <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/imakashtk"> instagram.com/imakashtk</a></li>
+    </ul>
+  </div>
+</section>
+
+
+
+<section id="education" class="bg-light py-5">
+  <div class="container">
+    <h2>Education</h2>
+    <p>
+      <strong>B.Tech (Information Technology)</strong><br>
+      Government Engineering College Sreekrishnapuram, Palakkad<br>
+      2020 - 2024<br>
+    </p>
+    <p>
+      <strong>Class XII</strong><br>
+      Government Higher Secondary School, Vellinezhi<br>
+      2019 - 2020<br>
+    </p>
+    <p>
+      <strong>Class X</strong><br>
+      Government Higher Secondary School, Vellinezhi<br>
+      2017 - 2018<br>
+    </p>
+  </div>
+</section>
+
+
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="h2">Projects</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="project">
+          <h3 class="h4"><a href="https://github.com/akash-tk/GestureX">GestureX: Open Source Linux Control Solution</a></h3>
+          <a href="https://github.com/akash-tk/GestureX">
+            <img src="gesturex.png" alt="GestureX Project Image" class="img-fluid">
+          </a>
+          <p>Developed a hand gesture recognition computer control system using MediaPipe and OpenCV.</p>
+          <p><strong>Tools Used:</strong> Python, OpenCV, MediaPipe</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="project">
+          <h3 class="h4"><a href="https://github.com/akash-tk/Police-Crime-Record-Management-System">PCRMS: Police Crime Record Management System</a></h3>
+          <a href="https://github.com/akash-tk/Police-Crime-Record-Management-System">
+            <img src="pcrms.webp" alt="PCRMS Project Image" class="img-fluid">
+          </a>
+          <p>Created a Police crime record management system using PHP, MySQL, and phpMyAdmin.</p>
+          <p><strong>Tools Used:</strong> MySQL, PHP, HTML, CSS</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="project">
+          <h3 class="h4"><a href="https://github.com/akash-tk/SentinelEye-WIDS">Sentinel Eye: A Comprehensive System for Wireless Network Security Analysis</a></h3>
+          <a href="https://github.com/akash-tk/SentinelEye-WIDS">
+            <img src="seye1.jpg" alt="Sentinel Eye Project Image" class="img-fluid">
+          </a>
+          <p>Developed a versatile system for comprehensive network security analysis, automated attack detection, and public awareness.</p>
+          <p><strong>Tools Used:</strong> Python, Pushover Cloud API, Arduino IDE, Microcontroller</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="project">
+          <h3 class="h4"><a href="https://github.com/akash-tk/contactflix">Contactflix: Comprehensive Contact Management System</a></h3>
+          <a href="https://github.com/akash-tk/contactflix">
+            <img src="contactflix.png" alt="Contactflix Project Image" class="img-fluid">
+          </a>
+          <p>Developed a full-stack contact management application using the MERN stack to streamline contact organization and usability.</p>
+          <p><strong>Tools Used:</strong> MongoDB, Express.js, React.js, Node.js</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div class="skill">
+        <i class="fab fa-python"></i>
+        <span>Python</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-java"></i>
+        <span>Java</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-cuttlefish"></i>
+        <span>C</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-html5"></i>
+        <span>HTML</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <span>CSS</span>
+      </div>
+      <div class="skill">
+        <i class="fas fa-database"></i>
+        <span>MySQL</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-node-js"></i>
+        <span>Node.js</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-react"></i>
+        <span>React.js</span>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js"></i>
+  <span>Express.js</span>
+      </div>
+      <div class="skill">
+        <i class="fas fa-database"></i>
+        <span>MongoDB</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="achievements" class="py-5">
+  <div class="container">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Completed Google Cloud Study Jams (10/2023)</li>
+      <li>Completed Google Cloud Career Practitioners Pathway (12/2022)</li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="contact" class="bg-light py-5">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>
+      Feel free to contact me via email or phone for any inquiries or opportunities.
+    </p>
+    <p>Email: <a href="mailto:akash.tk333@gmail.com">akash.tk333@gmail.com</a></p>
+    <p>Phone: 8891101357</p>
+  </div>
+</section>
+
+
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>&copy; <span id="year"></span> Akash T K. All rights reserved.</p>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  
+  const headerText = "Hi, I'm Akash T K";
+
+  function typeWriter(text, i, callback) {
+    if (i < text.length) {
+      document.getElementById("typed-header").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(() => {
+        typeWriter(text, i, callback);
+      }, 100);
+    } else {
+      if (callback) callback();
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    typeWriter(headerText, 0, () => {
+    });
+  });
+</script>
+
+</body>
+</html>
